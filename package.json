@@ -1,0 +1,26 @@
+{
+  "name": "tasteology",
+  "version": "1.0.0",
+  "description": "Simple html/js/css webpage - from a figma design.",
+  "main": "index.html",
+  "scripts": {
+    "start": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bom2ne1/tasteology.git"
+  },
+  "author": "jgcaley@gmial.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bom2ne1/tasteology/issues"
+  },
+  "homepage": "https://github.com/bom2ne1/tasteology#readme",
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-less": "^3.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}
