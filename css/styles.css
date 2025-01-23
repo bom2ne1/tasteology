@@ -109,13 +109,15 @@ body {
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
+  margin: 10px;
 }
 .page2 p {
   font-size: 21px;
   font-weight: 300;
   line-height: 30px;
   max-width: 315px;
-  justify-self: center;
+  display: inline-block;
+  margin: 0;
 }
 @media (max-width: 1080px) {
   .page2 p {
