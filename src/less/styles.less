@@ -6,7 +6,6 @@
 @breakpoint-md: 900px;
 @breakpoint-l: 1080px;
 
-
 body {
     font-family: @font-family;
     margin: 0;
@@ -43,6 +42,8 @@ body {
     img {
         width: 100%;
         height: auto;
+        cursor: pointer;
+        transition: opacity 0.2s;
     }
 
     .image-large {
@@ -55,11 +56,14 @@ body {
         flex-direction: column;
         gap: inherit;
     }
+
+    img:hover {
+        opacity: 0.8;
+    }
 }
 
 .text-section {
     max-width: 364px;
-
 
     p {
         font-size: 21px;
@@ -86,7 +90,7 @@ body {
 .headline {
     margin-bottom: 30px;
     padding-bottom: 30px;
-    border-bottom: 1px solid #FFFFFF;
+    border-bottom: 1px solid #fff;
 
     h1 {
         font-size: 30px;
@@ -120,13 +124,14 @@ body {
 
     img {
         max-width: 100%;
+        cursor: pointer;
+        transition: opacity 0.2s;
     }
 
     h3 {
         font-size: 21px;
         font-weight: 700;
         line-height: 30px;
-        justify-self: center;
     }
 
     p {
@@ -139,7 +144,57 @@ body {
         @media (max-width: @breakpoint-l) {
             max-width: 100%;
         }
-
     }
 
+    img:hover {
+        opacity: 0.8;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+
+    .modal-content {
+        max-width: 90%;
+        max-height: 80%;
+        object-fit: contain;
+        margin-bottom: 15px;
+    }
+
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #fff;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover,
+        &:focus {
+            color: #bbb;
+            text-decoration: none;
+        }
+    }
+
+    #caption {
+        color: #ccc;
+        text-align: center;
+        max-width: 80%;
+        padding: 10px 0;
+    }
 }
