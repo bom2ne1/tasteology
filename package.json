@@ -4,7 +4,8 @@
   "description": "Simple html/js/css webpage - from a figma design.",
   "main": "index.html",
   "scripts": {
-    "start": "grunt"
+    "start": "grunt",
+    "build": "grunt build"
   },
   "repository": {
     "type": "git",

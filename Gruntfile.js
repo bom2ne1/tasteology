@@ -88,4 +88,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-browser-sync');
 
     grunt.registerTask('default', ['less', 'copy', 'browserSync', 'watch']);
+    grunt.registerTask('build', ['less', 'copy']);
 };
