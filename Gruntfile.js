@@ -26,7 +26,7 @@ module.exports = function(grunt) {
             assets: {
                 expand: true,
                 cwd: 'src/assets/',
-                src: '**',
+                src: ['**', '!**/*.bak'],
                 dest: 'dist/assets/',
             }
         },
